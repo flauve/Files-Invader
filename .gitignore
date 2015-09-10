@@ -1,0 +1,5 @@
+# files to ignore
+/tmp/__init__.py
+.idea
+__pycache__
+__init__.py
