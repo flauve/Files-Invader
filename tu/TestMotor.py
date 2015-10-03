@@ -5,7 +5,6 @@ import os
 
 from Motor import Motor
 
-
 class TestMotor(unittest.TestCase):
 
     TMP_PATH = "tmp"

@@ -30,4 +30,5 @@ class Motor:
                 f.seek(size)
                 f.write("\0")
                 f.close()
-                i+= 1
+                i += 1
+

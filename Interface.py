@@ -1,7 +1,6 @@
 __author__ = 'root'
 
 from tkinter import *
-from tkinter import messagebox
 from tkinter.filedialog import askdirectory
 from tkinter.messagebox import showerror
 import tarfile
@@ -58,7 +57,7 @@ class Interface(Tk):
 
         self.pollute_input_file_path = Entry(p_file_name, textvariable=StringVar(), width=50)
         p_file_name.add(self.pollute_input_file_path)
-        p_file_name.add(Button(panel_pollute, text=LocalisationFr.TEXT_BROWSE.value, command=self.load_file))
+        p_file_name.add(Button(panel_pollute, text=LocalisationFr.TEXT_BROWSE.value, command=self.load_directory))
         p_file_name.pack(side=TOP, fill=BOTH, padx=5)
 
         Button(panel_pollute, text=LocalisationFr.PANEL_POLLUTE_BUTTON.value, command=self.lauch_pollute()).pack(
@@ -73,14 +72,14 @@ class Interface(Tk):
 
         self.unpollute_input_file_path = Entry(p_file_name, textvariable=StringVar(), width=50)
         p_file_name.add(self.unpollute_input_file_path)
-        p_file_name.add(Button(panel_unpollute, text=LocalisationFr.TEXT_BROWSE.value, command=self.load_file))
+        p_file_name.add(Button(panel_unpollute, text=LocalisationFr.TEXT_BROWSE.value, command=self.load_directory))
         p_file_name.pack(side=TOP, fill=BOTH, padx=5)
 
         Button(panel_unpollute, text=LocalisationFr.PANEL_UNPOLLUTE_BUTTON.value, command=self.lauch_pollute()).pack(
             padx=10, pady=10)
         return panel_unpollute
 
-    def load_file(self):
+    def load_directory(self):
         fname = askdirectory()
         if fname:
             try:

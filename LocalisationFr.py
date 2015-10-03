@@ -8,11 +8,11 @@ class LocalisationFr(Enum):
 
     TEXT_BROWSE = "Parcourir"
 
-    PANEL_POLLUTE = "Polution"
+    PANEL_POLLUTE = "Pollution"
     PANEL_POLLUTE_CONTENT = "Content pollution blablablablablabla"
     PANEL_POLLUTE_BUTTON = "Polluer"
 
-    PANEL_UNPOLLUTE = "Dépolution"
+    PANEL_UNPOLLUTE = "Dépollution"
     PANEL_UNPOLLUTE_CONTENT = "Content dépollution blablablablablabla"
     PANEL_UNPOLLUTE_BUTTON = "Dépolluer"
 
